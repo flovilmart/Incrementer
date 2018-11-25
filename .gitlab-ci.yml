@@ -1,5 +1,5 @@
 lint:
-  image: ibmcom/swift-ubuntu:4.2.1
+  image: swift:4.2.1
   before_script:
     - git clone https://github.com/yonaskolb/Mint.git /tmp/Mint
     - cd /tmp/Mint
@@ -9,7 +9,7 @@ lint:
     - swiftlint
 
 test:
-  image: ibmcom/swift-ubuntu:4.2.1
+  image: swift:4.2.1
   script:
     - swift package update
     - swift test

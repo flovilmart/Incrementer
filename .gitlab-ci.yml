@@ -1,5 +1,5 @@
 test:
-  image: ibmcom/swift-ubuntu:latest
+  image: swiftdocker/swift:latest
   script:
-    - swift pacakge update
+    - swift package update
     - swift test

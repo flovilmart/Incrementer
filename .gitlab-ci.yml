@@ -1,0 +1,5 @@
+test:
+  image: ibmcom/swift-ubuntu:latest
+  script:
+    - swift pacakge update
+    - swift test

@@ -3,15 +3,15 @@ import XCTest
 
 final class IncrementerTests: XCTestCase {
     func testIncrement() {
-        var a = 1
-        a++
-        XCTAssertEqual(a, 2)
+        var value = 1
+        value++
+        XCTAssertEqual(value, 2)
     }
 
     func testDecrement() {
-        var a = 2
-        a--
-        XCTAssertEqual(a, 1)
+        var value = 2
+        value--
+        XCTAssertEqual(value, 1)
     }
 
     static var allTests = [

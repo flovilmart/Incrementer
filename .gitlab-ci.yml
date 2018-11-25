@@ -1,5 +1,5 @@
 test:
-  image: swiftdocker/swift:latest
+  image: swiftdocker/swift:4.2.1
   script:
     - swift package update
     - swift test

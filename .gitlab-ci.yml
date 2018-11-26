@@ -1,12 +1,5 @@
 lint:
-  image: swift:4.2.1
-  before_script:
-    - export PWD=$(pwd)
-    - git clone https://github.com/yonaskolb/Mint.git /tmp/Mint
-    - cd /tmp/Mint
-    - swift run mint install yonaskolb/mint
-    - mint install realm/SwiftLint 
-    - cd $PWD
+  image: flovilmart/swift-ci:latest
   script:
     - swiftlint
 
